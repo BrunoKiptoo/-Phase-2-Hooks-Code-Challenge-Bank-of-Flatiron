@@ -7,7 +7,7 @@ function AddTransactionForm() {
   const [description, setDescription] = useState("")
   const [category, setCategory] = useState("")
   const [amount, setAmount] = useState("")
-  function handleSubmit(e) {
+  function handleSubmit(_) {
     fetch(" http://localhost:3000/transactions", {
       method: "POST",
       headers: {
