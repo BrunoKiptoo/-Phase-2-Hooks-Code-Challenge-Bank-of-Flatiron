@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Transaction from "./Transaction";
+//import btn from "./button";
 
 function AddTransactionForm() {
   const [date, setDate] = useState("")
@@ -8,7 +9,7 @@ function AddTransactionForm() {
   const [category, setCategory] = useState("")
   const [amount, setAmount] = useState("")
   function handleSubmit(e) {
-    fetch(" http://localhost:3000/transactions", {
+    fetch("http://localhost:3000/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -32,7 +33,9 @@ function AddTransactionForm() {
           <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" name="amount" placeholder="Amount" step="0.01" />
         </div>
         <button className="ui button" type="submit">
+          SUBMIT
           <Transaction />
+      
         </button>
       </form>
     </div>
