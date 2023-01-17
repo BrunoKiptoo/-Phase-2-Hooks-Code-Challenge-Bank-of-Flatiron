@@ -91,40 +91,14 @@
       "amount": "100000",
       "id": 13
     },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 14
-    },
+    
     {
       "date": "2023-01-12",
       "description": "Anabella",
       "category": "Art",
       "amount": "5500",
       "id": 15
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 16
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 17
-    },
-    {
-      "date": "",
-      "description": "",
-      "category": "",
-      "amount": "",
-      "id": 18
     }
+    
   ]
 }
