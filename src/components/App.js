@@ -3,11 +3,17 @@ import AccountContainer from "./AccountContainer";
 
 function App() {
   return (
-    <div className="ui raised segment">
-      <div className="ui segment violet inverted">
-        <h2>The Royal Bank of Flatiron</h2>
-      </div>
+    <div className="container-fluid">
+
+      <nav className="navbar navbar-light bg-light">
+        <h2 className="">The Royal Bank of Flatiron</h2>
+      </nav>
+
+      <div className="">
       <AccountContainer />
+      </div>
+      
+
     </div>
   );
 }

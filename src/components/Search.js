@@ -9,6 +9,7 @@ function Search({handleSearch}) {
         onChange={handleSearch}
       />
       <i className="circular search link icon"></i>
+      
     </div>
   );
 }
