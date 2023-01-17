@@ -5,12 +5,12 @@ function TransactionsList({transactions}) {
     return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />;
   })
   return (
-    <div className="col-6">
+    <div className="col-6 mt-3 ">
     <table className="table table-success table-striped ">
       <tbody>
         <tr>
           <th>
-            <h3 className="ui center aligned header">Date</h3>
+            <h3 className="ui center aligned header ">Date</h3>
           </th>
           <th>
             <h3 className="ui center aligned header">Description</h3>

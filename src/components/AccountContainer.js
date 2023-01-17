@@ -21,7 +21,7 @@ function AccountContainer() {
       <div></div>
      </div>
 
-      <div className="d-flex">
+      <div className="d-flex justify-content-around">
       <AddTransactionForm />
       <TransactionsList transactions={transaction} />
       </div>

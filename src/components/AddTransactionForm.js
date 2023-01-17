@@ -24,20 +24,25 @@ function AddTransactionForm() {
      alert("added successfully")
   }
   return (
-    <div className="ui segment">
-      <form onSubmit={handleSubmit} className="ui form">
+    <div className="ui segment col-5 bg-success m-3">
+      <form onSubmit={handleSubmit} className="ui form form-control form-control-lg ">
         <div className="inline fields">
-          <input value={date} onChange={(e) => setDate(e.target.value)} type="date" name="date" />
-          <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" name="description" placeholder="Description" />
-          <input value={category} onChange={(e) => setCategory(e.target.value)} type="text" name="category" placeholder="Category" />
-          <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" name="amount" placeholder="Amount" step="0.01" />
+          <input value={date} onChange={(e) => setDate(e.target.value)} type="date" name="date"  className="border-success"/>
+          <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" name="description" placeholder="Description" className="border-success"/>
+          <input value={category} onChange={(e) => setCategory(e.target.value)} type="text" name="category" placeholder="Category" className="border-success"/>
+          <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" name="amount" placeholder="Amount" step="0.01" className="border-success"/>
         </div>
-        <div></div>
-        <button className="btn btn-dark btn btn-primary btn-sm alert alert-success row g-3 needs-validation" type="submit" color="red">
+        
+        <div>
+      
+        <button className="btn btn-dark btn btn-primary btn-sm alert alert-success row g-6 needs-validation " type="submit" color="red">
           SUBMIT
           <Transaction />
-      
         </button>
+        </div>
+        <div>
+          <img src="https://www.freepnglogos.com/uploads/f-logo-orange-png-19.png" class="img-fluid img-thumbnail rounded" style={{height:"30rem"}}></img>
+        </div>
       </form>
     </div>
   );
