@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="container-fluid">
 
-      <nav className="bg-success opacity-75">
+      <nav className="bg-success opacity">
         <h2 className=" text-dark">The Royal Bank of Flatiron</h2>
       </nav>
       <div></div>

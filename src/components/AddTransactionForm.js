@@ -3,26 +3,17 @@ import React, { useState } from "react";
 import Transaction from "./Transaction";
 //import btn from "./button";
 
-function AddTransactionForm() {
+function AddTransactionForm({handleFormUpdate}) {
   const [date, setDate] = useState("")
   const [description, setDescription] = useState("")
   const [category, setCategory] = useState("")
   const [amount, setAmount] = useState("")
-  function handleSubmit(e) {
-    fetch("http://localhost:3000/transactions", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        date: date,
-        description: description,
-        category: category,
-        amount: amount,
-      }),
-    });
-     alert("added successfully")
+
+  function handleSubmit(e){
+    e.preventDefault()
+    handleFormUpdate([date, description, category, amount])
   }
+  
   return (
     <div className="ui segment col-5 bg-success m-3">
       <form onSubmit={handleSubmit} className="ui form form-control form-control-lg ">
@@ -41,7 +32,7 @@ function AddTransactionForm() {
         </button>
         </div>
         <div>
-          <img src="https://www.freepnglogos.com/uploads/f-logo-orange-png-19.png" class="img-fluid img-thumbnail rounded" style={{height:"30rem"}}></img>
+          <img src="https://www.freepnglogos.com/uploads/f-logo-orange-png-19.png" alt = "" class="img-fluid img-thumbnail rounded" style={{height:"30rem"}}></img>
         </div>
       </form>
     </div>
