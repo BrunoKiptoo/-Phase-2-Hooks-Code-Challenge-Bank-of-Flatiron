@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Transaction from "./Transaction";
-//import btn from "./button";
 
 function AddTransactionForm({handleFormUpdate}) {
   const [date, setDate] = useState("")
@@ -11,17 +10,17 @@ function AddTransactionForm({handleFormUpdate}) {
 
   function handleSubmit(e){
     e.preventDefault()
-    handleFormUpdate([date, description, category, amount])
+    handleFormUpdate({date, description, category, amount})
   }
   
   return (
-    <div className="ui segment col-5 bg-success m-3">
+    <div className="ui segment col-5  m-3 bg-success p-2 text-dark bg-opacity-50" >
       <form onSubmit={handleSubmit} className="ui form form-control form-control-lg ">
-        <div className="inline fields">
-          <input value={date} onChange={(e) => setDate(e.target.value)} type="date" name="date"  className="border-success"/>
-          <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" name="description" placeholder="Description" className="border-success"/>
-          <input value={category} onChange={(e) => setCategory(e.target.value)} type="text" name="category" placeholder="Category" className="border-success"/>
-          <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" name="amount" placeholder="Amount" step="0.01" className="border-success"/>
+        <div className="inline fields ">
+          <input value={date} onChange={(e) => setDate(e.target.value)} type="date" name="date"  className=" "/>
+          <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" name="description" placeholder="Description" className=""/>
+          <input value={category} onChange={(e) => setCategory(e.target.value)} type="text" name="category" placeholder="Category" className=""/>
+          <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" name="amount" placeholder="Amount" step="0.01" className=""/>
         </div>
         
         <div>
@@ -32,7 +31,7 @@ function AddTransactionForm({handleFormUpdate}) {
         </button>
         </div>
         <div>
-          <img src="https://www.freepnglogos.com/uploads/f-logo-orange-png-19.png" alt = "" class="img-fluid img-thumbnail rounded" style={{height:"30rem"}}></img>
+          <img src="https://www.freepnglogos.com/uploads/f-logo-orange-png-19.png" alt = "" class="img-fluid img-thumbnail rounded img-fluid img-thumbnail" style={{height:"30rem"}}></img>
         </div>
       </form>
     </div>

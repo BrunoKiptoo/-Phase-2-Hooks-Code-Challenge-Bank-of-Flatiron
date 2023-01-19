@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="container-fluid">
 
-      <nav className="bg-success opacity">
-        <h2 className=" text-dark">The Royal Bank of Flatiron</h2>
+      <nav className="bg-success p-2 text-white">
+        <h2 className=" p-3 mb-2  text-white font-weight-bold">The Royal Bank of Flatiron</h2>
       </nav>
       <div></div>
 

@@ -6,7 +6,7 @@ function TransactionsList({transactions}) {
   })
   return (
     <div className="col-6 mt-3 ">
-    <table className="table table-success table-striped ">
+    <table className="p-3 mb-2 bg-success p-2 text-white bg-opacity-75 text-white  table-striped  table table-bordered  " >
       <tbody>
         <tr>
           <th>
